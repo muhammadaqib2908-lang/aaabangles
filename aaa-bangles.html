@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AAA Bangles — Premium Fancy Bangles | Pakistan Wholesale</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Outfit',sans-serif;background:#F8F5F0;color:#1A1208;overflow-x:hidden;}
+::-webkit-scrollbar{width:3px;}::-webkit-scrollbar-thumb{background:#C4A35A;border-radius:4px;}
+:root{--ebony:#0F0A05;--charcoal:#1A1208;--gold:#C4A35A;--gold-lt:#DDB96A;--gold-pale:#F0DFA8;--cream:#F8F5F0;--white:#FDFCFA;--muted:#8C7B60;--rose:#D4607C;--aqua:#3AACB0;--sage:#5AAA7A;--violet:#8B6BC0;--border:rgba(196,163,90,0.16);}
+
+/* NAV */
+header{position:fixed;top:0;left:0;right:0;z-index:999;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;background:rgba(15,10,5,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.logo{display:flex;align-items:center;gap:.75rem;text-decoration:none;}
+.logo-ring{width:36px;height:36px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:.9rem;font-weight:900;color:var(--gold);}
+.logo-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;}
+.logo-name em{color:var(--gold-lt);font-style:italic;}
+nav{display:flex;align-items:center;gap:2rem;}
+nav a{color:rgba(255,255,255,.5);font-size:.76rem;font-weight:500;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:color .3s;}
+nav a:hover{color:var(--gold-lt);}
+.nav-cta{background:var(--gold);color:var(--ebony);padding:9px 20px;border-radius:6px;font-weight:700;font-size:.76rem;letter-spacing:.5px;text-transform:uppercase;text-decoration:none;transition:background .3s,transform .2s;}
+.nav-cta:hover{background:var(--gold-lt);transform:translateY(-1px);}
+.nav-pk{color:rgba(255,255,255,.35);font-size:.7rem;font-weight:500;}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--ebony);display:grid;grid-template-columns:1.1fr .9fr;align-items:center;padding:120px 6vw 80px;gap:5rem;position:relative;overflow:hidden;}
+.h-glow{position:absolute;border-radius:50%;filter:blur(110px);pointer-events:none;}
+.hg1{width:500px;height:500px;background:radial-gradient(circle,rgba(196,163,90,.14),transparent 70%);top:-100px;right:-80px;}
+.hg2{width:380px;height:380px;background:radial-gradient(circle,rgba(212,96,124,.09),transparent 70%);bottom:-80px;left:80px;}
+.hero-left{position:relative;z-index:2;}
+.hero-eyebrow{display:flex;align-items:center;gap:.7rem;margin-bottom:1.8rem;}
+.ey-line{width:28px;height:1px;background:var(--gold);}
+.ey-text{font-size:.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5.2vw,5.2rem);font-weight:900;line-height:1.02;color:#fff;margin-bottom:1.6rem;}
+h1 .italic-line{display:block;font-style:italic;font-weight:400;background:linear-gradient(100deg,var(--gold-lt),var(--gold-pale),var(--rose),var(--aqua),var(--gold-lt));background-size:200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 5s linear infinite;}
+@keyframes shimmer{to{background-position:200% center;}}
+.hero-desc{font-size:1rem;font-weight:300;color:rgba(255,255,255,.48);line-height:1.9;margin-bottom:1.2rem;max-width:480px;}
+.hero-desc b{color:rgba(255,255,255,.82);font-weight:500;}
+.moq-alert{display:flex;align-items:center;gap:1rem;background:rgba(196,163,90,.08);border:1px solid rgba(196,163,90,.25);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:1rem 1.4rem;margin-bottom:2.5rem;max-width:480px;}
+.moq-icon{font-size:1.6rem;flex-shrink:0;}
+.moq-title{font-size:.66rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem;}
+.moq-text{font-size:.83rem;color:rgba(255,255,255,.6);line-height:1.5;}
+.moq-text strong{color:rgba(255,255,255,.88);font-weight:600;}
+.hero-btns{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:3rem;}
+.btn-g{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:var(--ebony);padding:13px 26px;border-radius:7px;font-weight:700;font-size:.85rem;text-decoration:none;box-shadow:0 8px 28px rgba(196,163,90,.3);transition:all .3s;}
+.btn-g:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 14px 36px rgba(196,163,90,.4);}
+.btn-o{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(196,163,90,.3);color:rgba(255,255,255,.65);padding:13px 26px;border-radius:7px;font-weight:400;font-size:.85rem;text-decoration:none;transition:all .3s;}
+.btn-o:hover{border-color:var(--gold);color:var(--gold-lt);}
+.stats-row{display:flex;gap:2.5rem;flex-wrap:wrap;}
+.stat{border-left:2px solid rgba(196,163,90,.25);padding-left:1rem;}
+.stat-n{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold-lt);line-height:1;}
+.stat-l{font-size:.7rem;font-weight:500;color:rgba(255,255,255,.35);margin-top:.25rem;}
+/* Hero Visual */
+.hero-right{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;}
+.bangle-vis{position:relative;width:380px;height:380px;display:flex;align-items:center;justify-content:center;}
+.orbit{position:absolute;border-radius:50%;border-style:solid;border-color:transparent;}
+.o1{width:200px;height:200px;border-width:3px;border-top-color:var(--gold);border-right-color:rgba(196,163,90,.25);animation:sp 8s linear infinite;}
+.o2{width:272px;height:272px;border-width:2px;border-top-color:var(--rose);border-left-color:rgba(212,96,124,.2);animation:sp 12s linear infinite reverse;}
+.o3{width:344px;height:344px;border-width:1.5px;border-top-color:var(--aqua);border-right-color:rgba(58,172,176,.15);animation:sp 18s linear infinite;}
+@keyframes sp{to{transform:rotate(360deg);}}
+.vis-center{position:relative;z-index:10;width:130px;height:130px;border-radius:18px;background:linear-gradient(145deg,rgba(44,32,16,.95),rgba(20,14,6,.98));border:1px solid rgba(196,163,90,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.3rem;box-shadow:0 20px 60px rgba(0,0,0,.6);}
+.vis-emoji{font-size:2.8rem;filter:drop-shadow(0 4px 12px rgba(196,163,90,.5));}
+.vis-label{font-family:'Playfair Display',serif;font-size:.75rem;font-weight:700;color:var(--gold-lt);}
+.fpill{position:absolute;display:flex;align-items:center;gap:.5rem;background:rgba(12,8,3,.92);border:1px solid rgba(196,163,90,.2);border-radius:20px;padding:.4rem .85rem;backdrop-filter:blur(10px);white-space:nowrap;animation:fl 3s ease-in-out infinite;}
+.fp1{top:22px;right:8px;animation-delay:0s;}
+.fp2{bottom:50px;left:2px;animation-delay:.9s;}
+.fp3{top:110px;left:-14px;animation-delay:1.8s;}
+.fp4{bottom:88px;right:-8px;animation-delay:2.5s;}
+@keyframes fl{0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);}}
+.fp-dot{width:7px;height:7px;border-radius:50%;}
+.fp-name{font-size:.66rem;font-weight:600;color:rgba(255,255,255,.75);}
+.fp-pr{font-size:.62rem;font-weight:700;color:var(--gold);}
+
+/* MARQUEE */
+.marquee{background:var(--gold);overflow:hidden;padding:11px 0;}
+.mtrack{display:flex;white-space:nowrap;animation:mq 22s linear infinite;}
+.mi{display:inline-flex;align-items:center;gap:1.2rem;padding:0 1.8rem;font-size:.74rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ebony);}
+.mi::after{content:'&#9670;';font-size:.5rem;opacity:.4;}
+@keyframes mq{to{transform:translateX(-50%);}}
+
+/* POLICY STRIP */
+.policy-strip{background:var(--charcoal);display:flex;align-items:stretch;flex-wrap:wrap;}
+.ps-item{flex:1;min-width:200px;padding:1.8rem 2.2rem;display:flex;align-items:center;gap:1.1rem;border-right:1px solid rgba(196,163,90,.07);}
+.ps-item:last-child{border-right:none;}
+.ps-ico{width:42px;height:42px;border-radius:10px;background:rgba(196,163,90,.08);border:1px solid rgba(196,163,90,.16);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;}
+.ps-label{font-size:.62rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem;}
+.ps-val{font-size:.78rem;color:rgba(255,255,255,.45);line-height:1.5;}
+.ps-val b{color:rgba(255,255,255,.78);font-weight:600;}
+
+/* SECTION HELPERS */
+.sec{padding:96px 6vw;}
+.sec-ey{display:flex;align-items:center;gap:.7rem;margin-bottom:.5rem;}
+.sec-ey-line{width:22px;height:1px;background:var(--gold);}
+.sec-ey-label{font-size:.66rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.8vw,3rem);font-weight:700;line-height:1.12;margin-bottom:.75rem;}
+.sec-sub{font-size:.96rem;font-weight:300;color:var(--muted);line-height:1.85;max-width:480px;}
+
+/* COLLECTIONS */
+.collections{background:var(--white);}
+.coll-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem;flex-wrap:wrap;gap:1rem;}
+.tl{font-size:.78rem;font-weight:600;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:.4rem;transition:opacity .3s;}
+.tl:hover{opacity:.65;}
+.coll-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
+.c-card{border-radius:18px;overflow:hidden;position:relative;cursor:pointer;aspect-ratio:2/3;display:flex;align-items:flex-end;transition:transform .4s cubic-bezier(.22,.68,0,1.2),box-shadow .4s;}
+.c-card:hover{transform:translateY(-8px);box-shadow:0 28px 70px rgba(0,0,0,.15);}
+.c-card:hover .c-over{opacity:1;}
+.c-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:5.5rem;}
+.bg-kach{background:linear-gradient(150deg,#e8f4ff,#c0d8f8,#90b8f0);}
+.bg-silver{background:linear-gradient(150deg,#f2f2f6,#d8d8e8,#b8b8d0);}
+.bg-bridal{background:linear-gradient(150deg,#fff0f4,#ffd0dc,#ffaabe);}
+.bg-stone{background:linear-gradient(150deg,#f8f0e0,#e8d0a8,#d4b070);}
+.bg-party{background:linear-gradient(150deg,#f0e8ff,#d4b8f8,#b888f0);}
+.bg-eid{background:linear-gradient(150deg,#e8fff0,#b8f0d0,#70d8a8);}
+.c-over{position:absolute;inset:0;background:rgba(15,10,5,.52);opacity:0;transition:opacity .35s;display:flex;align-items:center;justify-content:center;}
+.c-over-btn{background:var(--gold);color:var(--ebony);padding:10px 22px;border-radius:7px;font-weight:700;font-size:.78rem;text-decoration:none;}
+.c-info{position:relative;z-index:2;padding:1.2rem;width:100%;background:linear-gradient(to top,rgba(15,10,5,.82),transparent);}
+.c-cat{font-size:.6rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.28rem;}
+.c-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:#fff;}
+.c-desc{font-size:.72rem;color:rgba(255,255,255,.58);margin-top:.18rem;}
+.c-swatches{display:flex;gap:.32rem;margin-top:.55rem;}
+.swatch{width:9px;height:9px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35);}
+
+/* PRODUCTS */
+.products{background:var(--cream);}
+.prod-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem;flex-wrap:wrap;gap:1rem;}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem;}
+.p-card{border-radius:14px;overflow:hidden;background:var(--white);border:1px solid rgba(196,163,90,.12);transition:transform .35s,box-shadow .35s;cursor:pointer;}
+.p-card:hover{transform:translateY(-6px);box-shadow:0 22px 55px rgba(0,0,0,.1);}
+.p-img{height:185px;display:flex;align-items:center;justify-content:center;font-size:3.8rem;position:relative;}
+.pi1{background:linear-gradient(150deg,#f2f2f6,#d8d8e8);}
+.pi2{background:linear-gradient(150deg,#e8f0ff,#c0d0f8);}
+.pi3{background:linear-gradient(150deg,#fff0f4,#ffd0dc);}
+.pi4{background:linear-gradient(150deg,#f8f0e0,#e8d0a8);}
+.pi5{background:linear-gradient(150deg,#f0e8ff,#d4b8f8);}
+.pi6{background:linear-gradient(150deg,#e8fff0,#b8f0d0);}
+.pi7{background:linear-gradient(150deg,#fff8e8,#ffe8b0);}
+.pi8{background:linear-gradient(150deg,#ffe8f0,#ffc0d0);}
+.p-badge{position:absolute;top:10px;left:10px;font-size:.6rem;font-weight:700;padding:3px 9px;border-radius:12px;letter-spacing:.5px;}
+.b-new{background:#5AAA7A;color:#fff;}
+.b-hot{background:#D4607C;color:#fff;}
+.b-best{background:var(--gold);color:var(--ebony);}
+.p-body{padding:1rem 1.1rem;}
+.p-name{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:700;margin-bottom:.22rem;}
+.p-tagline{font-size:.74rem;color:var(--muted);margin-bottom:.6rem;line-height:1.5;}
+.p-colors{display:flex;gap:.28rem;margin-bottom:.75rem;}
+.cd{width:8px;height:8px;border-radius:50%;}
+.p-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem;}
+.p-price{font-size:.85rem;font-weight:700;color:var(--gold);}
+.p-moq{font-size:.65rem;color:var(--muted);margin-top:.1rem;}
+.wa-btn{display:inline-flex;align-items:center;gap:.32rem;background:#25D366;color:#fff;padding:6px 11px;border-radius:6px;font-size:.7rem;font-weight:700;text-decoration:none;transition:opacity .3s;}
+.wa-btn:hover{opacity:.82;}
+
+/* PACKAGING */
+.packing{background:var(--white);}
+.pack-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.pack-cards{display:flex;flex-direction:column;gap:1.1rem;margin-top:2.2rem;}
+.pack-card{display:flex;align-items:flex-start;gap:1.1rem;padding:1.3rem;background:var(--cream);border:1px solid rgba(196,163,90,.14);border-radius:13px;transition:border-color .3s,transform .3s;}
+.pack-card:hover{border-color:var(--gold);transform:translateX(5px);}
+.pack-ico{width:46px;height:46px;border-radius:11px;background:linear-gradient(135deg,var(--gold),var(--gold-lt));display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;}
+.pack-title{font-size:.9rem;font-weight:700;margin-bottom:.22rem;}
+.pack-text{font-size:.78rem;color:var(--muted);line-height:1.6;}
+.pack-visual{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.pv-box{border-radius:16px;background:var(--cream);border:1px solid rgba(196,163,90,.14);padding:1.5rem;text-align:center;transition:transform .3s,box-shadow .3s;}
+.pv-box:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,.07);}
+.pv-box.dark{grid-column:span 2;background:linear-gradient(135deg,var(--ebony),var(--charcoal));border-color:rgba(196,163,90,.22);}
+.pv-emoji{font-size:2.6rem;margin-bottom:.65rem;}
+.pv-title{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;}
+.pv-box.dark .pv-title{color:var(--gold-lt);}
+.pv-text{font-size:.73rem;color:var(--muted);margin-top:.28rem;line-height:1.5;}
+.pv-box.dark .pv-text{color:rgba(255,255,255,.4);}
+
+/* WHY US */
+.why{background:var(--ebony);}
+.why h2{color:#fff;}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3.5rem;}
+.w-card{padding:1.8rem 1.4rem;border-radius:13px;border:1px solid rgba(196,163,90,.12);background:rgba(255,255,255,.025);text-align:center;transition:border-color .3s,background .3s,transform .3s;}
+.w-card:hover{border-color:var(--gold);background:rgba(196,163,90,.05);transform:translateY(-5px);}
+.w-ico{font-size:2.1rem;margin-bottom:.85rem;}
+.w-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold-lt);margin-bottom:.42rem;}
+.w-text{font-size:.76rem;color:rgba(255,255,255,.36);line-height:1.65;}
+
+/* BULK ORDER */
+.bulk{background:var(--cream);}
+.bulk-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:5rem;align-items:start;}
+.bulk-steps{margin-top:2rem;display:flex;flex-direction:column;gap:0;}
+.bs{display:flex;gap:1rem;align-items:flex-start;}
+.bs-line{display:flex;flex-direction:column;align-items:center;}
+.bs-num{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-lt));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;color:var(--ebony);flex-shrink:0;}
+.bs-connector{width:1px;flex:1;min-height:24px;background:rgba(196,163,90,.18);margin:4px 0;}
+.bs-content{padding-bottom:1.5rem;}
+.bs-title{font-size:.88rem;font-weight:700;margin-bottom:.2rem;}
+.bs-text{font-size:.78rem;color:var(--muted);line-height:1.6;}
+.form-card{background:var(--white);border:1px solid rgba(196,163,90,.14);border-radius:20px;padding:2.6rem;box-shadow:0 24px 70px rgba(196,163,90,.06);}
+.form-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:.32rem;}
+.form-sub{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;line-height:1.5;}
+.form-moq-note{display:flex;align-items:center;gap:.75rem;background:rgba(196,163,90,.06);border:1px solid rgba(196,163,90,.2);border-radius:8px;padding:.85rem 1rem;margin-bottom:1.7rem;}
+.fmn-icon{font-size:1.1rem;}
+.fmn-text{font-size:.76rem;color:var(--charcoal);line-height:1.5;}
+.fmn-text b{color:var(--gold);font-weight:700;}
+.fld{margin-bottom:1rem;}
+.fld label{display:block;font-size:.7rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--charcoal);margin-bottom:.38rem;}
+.fld input,.fld select,.fld textarea{width:100%;padding:10px 13px;border:1.5px solid rgba(196,163,90,.2);border-radius:8px;font-family:'Outfit',sans-serif;font-size:.86rem;color:var(--charcoal);background:var(--cream);outline:none;transition:border-color .3s,box-shadow .3s;}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(196,163,90,.1);}
+.fld textarea{min-height:78px;resize:vertical;}
+.fld-2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;}
+.form-submit{width:100%;padding:12px;background:linear-gradient(135deg,var(--gold),var(--gold-lt));color:var(--ebony);border:none;border-radius:8px;font-family:'Outfit',sans-serif;font-weight:700;font-size:.9rem;cursor:pointer;box-shadow:0 4px 20px rgba(196,163,90,.25);transition:transform .2s,box-shadow .2s;margin-top:.45rem;}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(196,163,90,.35);}
+.form-wa-alt{text-align:center;margin-top:1.1rem;font-size:.76rem;color:var(--muted);}
+.form-wa-alt a{color:#25D366;font-weight:700;text-decoration:none;}
+
+/* TESTIMONIALS */
+.testimonials{background:var(--white);}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3.5rem;}
+.t-card{background:var(--cream);border:1px solid rgba(196,163,90,.12);border-radius:15px;padding:1.7rem;transition:border-color .3s,transform .3s;}
+.t-card:hover{border-color:var(--gold);transform:translateY(-4px);}
+.t-stars{color:var(--gold);font-size:.85rem;margin-bottom:.78rem;letter-spacing:2px;}
+.t-text{font-size:.86rem;color:#5a3d2e;line-height:1.8;margin-bottom:1.1rem;font-style:italic;}
+.t-author{display:flex;align-items:center;gap:.72rem;}
+.t-av{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;color:#fff;flex-shrink:0;}
+.ta1{background:linear-gradient(135deg,var(--gold),var(--rose));}
+.ta2{background:linear-gradient(135deg,var(--aqua),var(--violet));}
+.ta3{background:linear-gradient(135deg,var(--sage),var(--aqua));}
+.t-name{font-weight:700;font-size:.83rem;color:var(--charcoal);}
+.t-loc{font-size:.7rem;color:var(--muted);margin-top:.1rem;}
+.t-verify{font-size:.62rem;color:var(--sage);font-weight:600;margin-top:.12rem;}
+
+/* CTA */
+.cta{background:var(--ebony);padding:100px 6vw;text-align:center;position:relative;overflow:hidden;}
+.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(196,163,90,.12),transparent 55%),radial-gradient(ellipse at 70% 50%,rgba(212,96,124,.08),transparent 55%);}
+.cta-inner{position:relative;z-index:2;max-width:680px;margin:0 auto;}
+.cta-ey{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-bottom:1.2rem;}
+.cta h2{color:#fff;margin-bottom:.9rem;}
+.cta-desc{font-size:.94rem;color:rgba(255,255,255,.42);line-height:1.85;margin-bottom:.8rem;}
+.pk-note{display:inline-flex;align-items:center;gap:.6rem;background:rgba(196,163,90,.07);border:1px solid rgba(196,163,90,.18);border-radius:20px;padding:.48rem 1.1rem;margin-bottom:2.5rem;font-size:.72rem;color:rgba(255,255,255,.5);}
+.pk-note strong{color:var(--gold-lt);font-weight:600;}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.8rem;}
+.wa-big{display:inline-flex;align-items:center;gap:.7rem;background:#25D366;color:#fff;padding:13px 30px;border-radius:8px;font-weight:700;font-size:.88rem;text-decoration:none;box-shadow:0 6px 28px rgba(37,211,102,.25);transition:transform .2s,box-shadow .2s;}
+.wa-big:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(37,211,102,.35);}
+.insta-big{display:inline-flex;align-items:center;gap:.7rem;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;padding:13px 30px;border-radius:8px;font-weight:700;font-size:.88rem;text-decoration:none;box-shadow:0 6px 28px rgba(220,39,67,.22);transition:transform .2s,box-shadow .2s;}
+.insta-big:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(220,39,67,.32);}
+.contact-row{display:flex;justify-content:center;gap:1.1rem;flex-wrap:wrap;}
+.cc{display:flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.04);border:1px solid rgba(196,163,90,.11);border-radius:8px;padding:.82rem 1.3rem;color:rgba(255,255,255,.48);font-size:.78rem;text-decoration:none;transition:background .3s,border-color .3s;}
+.cc:hover{background:rgba(196,163,90,.07);border-color:rgba(196,163,90,.28);color:rgba(255,255,255,.75);}
+.cc-icon{font-size:1.1rem;}
+
+/* FOOTER */
+footer{background:#080503;padding:52px 6vw 26px;border-top:1px solid rgba(196,163,90,.07);}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
+.ft-brand .logo{margin-bottom:.65rem;}
+.ft-brand p{font-size:.8rem;color:#3a2818;line-height:1.75;max-width:255px;margin-bottom:.75rem;}
+.ft-pk-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(196,163,90,.05);border:1px solid rgba(196,163,90,.12);border-radius:20px;padding:.32rem .85rem;font-size:.65rem;color:rgba(255,255,255,.3);margin-bottom:1.1rem;}
+.ft-socials{display:flex;gap:.6rem;}
+.fsoc{width:32px;height:32px;border-radius:7px;border:1px solid rgba(196,163,90,.12);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:.95rem;transition:background .3s,border-color .3s;}
+.fsoc:hover{background:rgba(196,163,90,.11);border-color:var(--gold);}
+.ft-col h5{font-size:.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:.58rem;}
+.ft-col ul a{color:#3a2818;font-size:.8rem;text-decoration:none;transition:color .3s;}
+.ft-col ul a:hover{color:var(--gold-lt);}
+.ft-bottom{border-top:1px solid rgba(196,163,90,.06);padding-top:1.3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem;}
+.ft-copy{font-size:.72rem;color:#2a1810;}
+.ft-copy span{color:var(--gold);}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .hero{grid-template-columns:1fr;padding:110px 6vw 60px;}
+  .hero-right{display:none;}
+  .why-grid{grid-template-columns:repeat(2,1fr);}
+  .prod-grid{grid-template-columns:repeat(2,1fr);}
+  .ft-grid{grid-template-columns:1fr 1fr;gap:2rem;}
+}
+@media(max-width:860px){
+  .coll-grid{grid-template-columns:repeat(2,1fr);}
+  .pack-grid,.bulk-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .test-grid{grid-template-columns:1fr;}
+  .policy-strip{flex-direction:column;}
+  .ps-item{border-right:none;border-bottom:1px solid rgba(196,163,90,.07);}
+  nav{display:none;}
+}
+@media(max-width:600px){
+  .coll-grid,.prod-grid,.why-grid{grid-template-columns:1fr;}
+  .fld-2{grid-template-columns:1fr;}
+  .ft-grid{grid-template-columns:1fr;}
+  .stats-row{gap:1.4rem;}
+  .pack-visual{grid-template-columns:1fr;}
+  .pv-box.dark{grid-column:span 1;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo">
+    <div class="logo-ring">AAA</div>
+    <div class="logo-name">AAA <em>Bangles</em></div>
+  </a>
+  <nav>
+    <a href="#collections">Collections</a>
+    <a href="#products">Products</a>
+    <a href="#packing">Packaging</a>
+    <a href="#bulk">Bulk Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <div class="nav-pk">&#127477;&#127472; Pakistan Only</div>
+    <a href="https://wa.me/923000000000" class="nav-cta">&#128230; Order Now</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="h-glow hg1"></div>
+  <div class="h-glow hg2"></div>
+  <div class="hero-left">
+    <div class="hero-eyebrow"><div class="ey-line"></div><span class="ey-text">Pakistan's Premium Bangle Wholesaler</span></div>
+    <h1>Fancy Bangles<span class="italic-line">Crafted to Impress</span></h1>
+    <p class="hero-desc">Glass bangles, silver bangles &amp; stone-work fancy sets &#8212; each design available in <b>multiple colour variants</b> with <b>premium individual packaging</b>. Built for retailers who want quality.</p>
+    <div class="moq-alert">
+      <div class="moq-icon">&#128230;</div>
+      <div>
+        <div class="moq-title">Wholesale Policy</div>
+        <div class="moq-text">Minimum order of <strong>100 packets per order</strong>. Each design has its own price. &#127477;&#127472; Pakistan delivery only.</div>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <a href="https://wa.me/923000000000" class="btn-g">&#128241; WhatsApp to Order</a>
+      <a href="#collections" class="btn-o">&#10022; Browse Collections</a>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-n">200+</div><div class="stat-l">Designs in Stock</div></div>
+      <div class="stat"><div class="stat-n">50+</div><div class="stat-l">Colours Per Design</div></div>
+      <div class="stat"><div class="stat-n">100</div><div class="stat-l">Min Packets Order</div></div>
+      <div class="stat"><div class="stat-n">24hr</div><div class="stat-l">Dispatch Time</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="bangle-vis">
+      <div class="orbit o1"></div>
+      <div class="orbit o2"></div>
+      <div class="orbit o3"></div>
+      <div class="vis-center">
+        <div class="vis-emoji">&#128141;</div>
+        <div class="vis-label">AAA Bangles</div>
+      </div>
+      <div class="fpill fp1"><div class="fp-dot" style="background:#c8c8d8;"></div><span class="fp-name">Silver Set</span><span class="fp-pr">Wholesale</span></div>
+      <div class="fpill fp2"><div class="fp-dot" style="background:#90b8f0;"></div><span class="fp-name">Glass Bangles</span><span class="fp-pr">Multi-Color</span></div>
+      <div class="fpill fp3"><div class="fp-dot" style="background:#e8d0a8;"></div><span class="fp-name">Stone Work</span><span class="fp-pr">Premium</span></div>
+      <div class="fpill fp4"><div class="fp-dot" style="background:#ffd0dc;"></div><span class="fp-name">Bridal Set</span><span class="fp-pr">Bulk Order</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="mtrack">
+    <span class="mi">AAA Bangles</span><span class="mi">Glass Bangles</span><span class="mi">Silver Bangles</span><span class="mi">Premium Packing</span><span class="mi">Min 100 Packets</span><span class="mi">Wholesale Pakistan</span><span class="mi">Multi Colour Sets</span><span class="mi">Bulk Orders Only</span><span class="mi">Fast Delivery</span><span class="mi">Instagram: AAA Bangles</span>
+    <span class="mi">AAA Bangles</span><span class="mi">Glass Bangles</span><span class="mi">Silver Bangles</span><span class="mi">Premium Packing</span><span class="mi">Min 100 Packets</span><span class="mi">Wholesale Pakistan</span><span class="mi">Multi Colour Sets</span><span class="mi">Bulk Orders Only</span><span class="mi">Fast Delivery</span><span class="mi">Instagram: AAA Bangles</span>
+  </div>
+</div>
+
+<!-- POLICY STRIP -->
+<div class="policy-strip">
+  <div class="ps-item"><div class="ps-ico">&#128230;</div><div><div class="ps-label">Minimum Order</div><div class="ps-val"><b>100 packets minimum</b> per order. Wholesale bulk only.</div></div></div>
+  <div class="ps-item"><div class="ps-ico">&#127912;</div><div><div class="ps-label">Multi-Colour Variants</div><div class="ps-val">Each design in <b>multiple colour variants</b> per set.</div></div></div>
+  <div class="ps-item"><div class="ps-ico">&#127873;</div><div><div class="ps-label">Premium Packaging</div><div class="ps-val"><b>Individually packed</b> in premium presentation boxes.</div></div></div>
+  <div class="ps-item"><div class="ps-ico">&#127477;&#127472;</div><div><div class="ps-label">Pakistan Only</div><div class="ps-val">Nationwide delivery. <b>No international orders.</b></div></div></div>
+</div>
+
+<!-- COLLECTIONS -->
+<section class="sec collections" id="collections">
+  <div class="coll-top">
+    <div>
+      <div class="sec-ey"><div class="sec-ey-line"></div><span class="sec-ey-label">Our Collections</span></div>
+      <h2>Fancy Bangles for<br>Every Occasion</h2>
+      <p class="sec-sub" style="margin-top:.5rem;">Glass, silver &amp; stone-work collections &#8212; every design in multi-colour variants with premium packaging included.</p>
+    </div>
+    <a href="https://wa.me/923000000000" class="tl">Full Catalogue on WhatsApp &#8594;</a>
+  </div>
+  <div class="coll-grid">
+    <div class="c-card"><div class="c-bg bg-kach">&#128142;</div><div class="c-over"><a href="https://wa.me/923000000000" class="c-over-btn">Order Bulk</a></div><div class="c-info"><div class="c-cat">Bestseller</div><div class="c-name">Kach Glass Bangles</div><div class="c-desc">Vibrant glass bangles in all colours</div><div class="c-swatches"><div class="swatch" style="background:#e05060;"></div><div class="swatch" style="background:#4090e0;"></div><div class="swatch" style="background:#40c080;"></div><div class="swatch" style="background:#d0a030;"></div><div class="swatch" style="background:#a060d0;"></div><div class="swatch" style="background:#e06030;"></div></div></div></div>
+    <div class="c-card"><div class="c-bg bg-silver">&#9898;</div><div class="c-over"><a href="https://wa.me/923000000000" class="c-over-btn">Order Bulk</a></div><div class="c-info"><div class="c-cat">Premium</div><div class="c-name">Silver Bangles</div><div class="c-desc">Elegant silver-tone fancy designs</div><div class="c-swatches"><div class="swatch" style="background:#c8c8d8;"></div><div class="swatch" style="background:#a8a8c0;"></div><div class="swatch" style="background:#d8d0e8;"></div><div class="swatch" style="background:#e8e0f0;"></div></div></div></div>
+    <div class="c-card"><div class="c-bg bg-bridal">&#127800;</div><div class="c-over"><a href="https://wa.me/923000000000" class="c-over-btn">Order Bulk</a></div><div class="c-info"><div class="c-cat">Bridal</div><div class="c-name">Bridal Fancy Sets</div><div class="c-desc">Special wedding &amp; mehndi sets</div><div class="c-swatches"><div class="swatch" style="background:#e05070;"></div><div class="swatch" style="background:#c83050;"></div><div class="swatch" style="background:#e08030;"></div><div class="swatch" style="background:#f0c040;"></div></div></div></div>
+    <div class="c-card"><div class="c-bg bg-stone">&#10024;</div><div class="c-over"><a href="https://wa.me/923000000000" class="c-over-btn">Order Bulk</a></div><div class="c-info"><div class="c-cat">Fancy</div><div class="c-name">Stone Work Bangles</div><div class="c-desc">Studded &amp; decorated fancy bangles</div><div class="c-swatches"><div class="swatch" style="background:#e0b840;"></div><div class="swatch" style="background:#c09030;"></div><div class="swatch" style="background:#d0d0d0;"></div><div class="swatch" style="background:#a08860;"></div></div></div></div>
+    <div class="c-card"><div class="c-bg bg-party">&#127881;</div><div class="c-over"><a href="https://wa.me/923000000000" class="c-over-btn">Order Bulk</a></div><div class="c-info"><div class="c-cat">Party Wear</div><div class="c-name">Party &amp; Festival</div><div class="c-desc">Glam bangles for Eid &amp; events</div><div class="c-swatches"><div class="swatch" style="background:#c060e0;"></div><div class="swatch" style="background:#e060a0;"></div><div class="swatch" style="background:#60a0e0;"></div><div class="swatch" style="background:#e0c030;"></div></div></div></div>
+    <div class="c-card"><div class="c-bg bg-eid">&#127769;</div><div class="c-over"><a href="https://wa.me/923000000000" class="c-over-btn">Order Bulk</a></div><div class="c-info"><div class="c-cat">Seasonal</div><div class="c-name">Eid Special</div><div class="c-desc">Limited festive season designs</div><div class="c-swatches"><div class="swatch" style="background:#60c880;"></div><div class="swatch" style="background:#40a860;"></div><div class="swatch" style="background:#e0c040;"></div><div class="swatch" style="background:#c8a030;"></div></div></div></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="sec products" id="products">
+  <div class="prod-top">
+    <div>
+      <div class="sec-ey"><div class="sec-ey-line"></div><span class="sec-ey-label">Featured Products</span></div>
+      <h2>Our Bestselling Sets</h2>
+      <p class="sec-sub" style="margin-top:.5rem;">Each design has its own price. All sets in multi-colour variants. Min 100 packets per order. WhatsApp for full price list.</p>
+    </div>
+    <a href="https://wa.me/923000000000" class="tl">WhatsApp for Full Price List &#8594;</a>
+  </div>
+  <div class="prod-grid">
+    <div class="p-card"><div class="p-img pi1">&#9898;<span class="p-badge b-best">BESTSELLER</span></div><div class="p-body"><div class="p-name">Classic Silver Set</div><div class="p-tagline">Silver-tone bangles, 12 pcs per set, multiple finishes</div><div class="p-colors"><div class="cd" style="background:#c8c8d8;"></div><div class="cd" style="background:#a8c8e8;"></div><div class="cd" style="background:#e8c8d8;"></div><div class="cd" style="background:#d8e8c8;"></div><div class="cd" style="background:#e8d8c8;"></div></div><div class="p-foot"><div><div class="p-price">Price on Request</div><div class="p-moq">Min: 100 packets</div></div><a href="https://wa.me/923000000000" class="wa-btn">&#128172; Inquire</a></div></div></div>
+    <div class="p-card"><div class="p-img pi2">&#128142;<span class="p-badge b-hot">HOT</span></div><div class="p-body"><div class="p-name">Kach Glass Set</div><div class="p-tagline">Colourful glass bangles, vibrant assorted shades</div><div class="p-colors"><div class="cd" style="background:#e04060;"></div><div class="cd" style="background:#4090e0;"></div><div class="cd" style="background:#40c080;"></div><div class="cd" style="background:#e0b030;"></div><div class="cd" style="background:#a050c0;"></div><div class="cd" style="background:#e06030;"></div></div><div class="p-foot"><div><div class="p-price">Price on Request</div><div class="p-moq">Min: 100 packets</div></div><a href="https://wa.me/923000000000" class="wa-btn">&#128172; Inquire</a></div></div></div>
+    <div class="p-card"><div class="p-img pi3">&#127800;<span class="p-badge b-new">NEW</span></div><div class="p-body"><div class="p-name">Bridal Fancy Set</div><div class="p-tagline">Premium bridal bangles with stone detailing</div><div class="p-colors"><div class="cd" style="background:#e03060;"></div><div class="cd" style="background:#c82050;"></div><div class="cd" style="background:#f0a030;"></div><div class="cd" style="background:#e8c040;"></div></div><div class="p-foot"><div><div class="p-price">Price on Request</div><div class="p-moq">Min: 100 packets</div></div><a href="https://wa.me/923000000000" class="wa-btn">&#128172; Inquire</a></div></div></div>
+    <div class="p-card"><div class="p-img pi4">&#10024;<span class="p-badge b-best">TOP</span></div><div class="p-body"><div class="p-name">Stone Work Fancy</div><div class="p-tagline">Kundan &amp; rhinestone decorated bangles</div><div class="p-colors"><div class="cd" style="background:#e0b840;"></div><div class="cd" style="background:#d0d0d0;"></div><div class="cd" style="background:#e05870;"></div><div class="cd" style="background:#5088e0;"></div></div><div class="p-foot"><div><div class="p-price">Price on Request</div><div class="p-moq">Min: 100 packets</div></div><a href="https://wa.me/923000000000" class="wa-btn">&#128172; Inquire</a></div></div></div>
+    <div class="p-card"><div class="p-img pi5">&#127881;<span class="p-badge b-hot">HOT</span></div><div class="p-body"><div class="p-name">Party Glam Set</div><div class="p-tagline">Glitter finish bangles for parties &amp; events</div><div class="p-colors"><div class="cd" style="background:#c060e0;"></div><div class="cd" style="background:#e060a0;"></div><div class="cd" style="background:#60a0e0;"></div><div class="cd" style="background:#e0c030;"></div></div><div class="p-foot"><div><div class="p-price">Price on Request</div><div class="p-moq">Min: 100 packets</div></div><a href="https://wa.me/923000000000" class="wa-btn">&#128172; Inquire</a></div></div></div>
+    <div class="p-card"><div class="p-img pi6">&#127769;<span class="p-badge b-new">NEW</span></div><div class="p-body"><div class="p-name">Eid Special Set</div><div class="p-tagline">Limited festive collection, premium finish</div><div class="p-colors"><div class="cd" style="background:#60c880;"></div><div class="cd" style="background:#e0c040;"></div><div class="cd" style="background:#e04060;"></div><div class="cd" style="background:#4080d0;"></div></div><div class="p-foot"><div><div class="p-price">Price on Request</div><div class="p-moq">Min: 100 packets</div></div><a href="https://wa.me/923000000000" class="wa-btn">&#128172; Inquire</a></div></div></div>
+    <div class="p-card"><div class="p-img pi7">&#128155;<span class="p-badge b-best">TOP</span></div><div class="p-body"><div class="p-name">Meena Work Bangles</div><div class="p-tagline">Traditional meena enamel work bangles</div><div class="p-colors"><div class="cd" style="background:#e08030;"></div><div class="cd" style="background:#e04060;"></div><div class="cd" style="background:#4090e0;"></div><div class="cd" style="background:#40b060;"></div></div><div class="p-foot"><div><div class="p-price">Price on Request</div><div class="p-moq">Min: 100 packets</div></div><a href="https://wa.me/923000000000" class="wa-btn">&#128172; Inquire</a></div></div></div>
+    <div class="p-card"><div class="p-img pi8">&#127846;<span class="p-badge b-new">NEW</span></div><div class="p-body"><div class="p-name">Floral Fancy Bangles</div><div class="p-tagline">Floral pattern bangles, trendy &amp; colourful</div><div class="p-colors"><div class="cd" style="background:#e06080;"></div><div class="cd" style="background:#c040a0;"></div><div class="cd" style="background:#e09030;"></div><div class="cd" style="background:#60b070;"></div></div><div class="p-foot"><div><div class="p-price">Price on Request</div><div class="p-moq">Min: 100 packets</div></div><a href="https://wa.me/923000000000" class="wa-btn">&#128172; Inquire</a></div></div></div>
+  </div>
+</section>
+
+<!-- PACKAGING -->
+<section class="sec packing" id="packing">
+  <div class="pack-grid">
+    <div>
+      <div class="sec-ey"><div class="sec-ey-line"></div><span class="sec-ey-label">Premium Packaging</span></div>
+      <h2>Every Set Packed<br>to Perfection</h2>
+      <p class="sec-sub" style="margin-top:.5rem;">We don't just sell bangles &#8212; we deliver presentation. Every set in premium individual packaging, retail-display ready.</p>
+      <div class="pack-cards">
+        <div class="pack-card"><div class="pack-ico">&#127873;</div><div><div class="pack-title">Individual Packet Per Set</div><div class="pack-text">Every bangle set individually packed in its own premium packet &#8212; ready for retail display or gifting.</div></div></div>
+        <div class="pack-card"><div class="pack-ico">&#127912;</div><div><div class="pack-title">Multiple Colours Per Design</div><div class="pack-text">Each design comes in many colour variants. Every colour variant is separately packed for easy sorting &amp; display.</div></div></div>
+        <div class="pack-card"><div class="pack-ico">&#9989;</div><div><div class="pack-title">Quality Checked</div><div class="pack-text">Every packet inspected before dispatch. No broken pieces, no loose stones &#8212; quality guaranteed.</div></div></div>
+        <div class="pack-card"><div class="pack-ico">&#128230;</div><div><div class="pack-title">Secure Bulk Packaging</div><div class="pack-text">Your 100+ packet orders securely boxed for safe delivery anywhere across Pakistan.</div></div></div>
+      </div>
+    </div>
+    <div class="pack-visual">
+      <div class="pv-box dark"><div class="pv-emoji">&#127873;</div><div class="pv-title">Premium Individual Packets</div><div class="pv-text">Retail-ready packaging included with every bangle set order</div></div>
+      <div class="pv-box"><div class="pv-emoji">&#128142;</div><div class="pv-title">Glass Bangles</div><div class="pv-text">Kach bangles in vibrant multi-colour sets</div></div>
+      <div class="pv-box"><div class="pv-emoji">&#9898;</div><div class="pv-title">Silver Bangles</div><div class="pv-text">Elegant silver-tone fancy designs</div></div>
+      <div class="pv-box"><div class="pv-emoji">&#10024;</div><div class="pv-title">Stone Work Sets</div><div class="pv-text">Studded fancy bangles, premium finish</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec why">
+  <div style="text-align:center;max-width:560px;margin:0 auto;">
+    <div class="sec-ey" style="justify-content:center;"><div class="sec-ey-line"></div><span class="sec-ey-label">Why Choose AAA Bangles</span><div class="sec-ey-line"></div></div>
+    <h2 style="color:#fff;">Pakistan's Most Trusted<br>Bangle Wholesaler</h2>
+  </div>
+  <div class="why-grid">
+    <div class="w-card"><div class="w-ico">&#128142;</div><div class="w-title">Premium Quality</div><div class="w-text">High-quality glass, silver-tone &amp; fancy bangles. No compromise on finish or durability.</div></div>
+    <div class="w-card"><div class="w-ico">&#127912;</div><div class="w-title">Multi-Colour Variants</div><div class="w-text">Every design in multiple colours. One design, many colour options to suit all customers.</div></div>
+    <div class="w-card"><div class="w-ico">&#127873;</div><div class="w-title">Premium Packaging</div><div class="w-text">Each set individually packed in premium packets. Retail-display ready straight from the box.</div></div>
+    <div class="w-card"><div class="w-ico">&#128230;</div><div class="w-title">100 Packets Minimum</div><div class="w-text">We only process bulk orders of 100+ packets. This means best wholesale pricing every time.</div></div>
+    <div class="w-card"><div class="w-ico">&#128176;</div><div class="w-title">Per-Design Pricing</div><div class="w-text">Each design has its own price. Transparent, fair wholesale rates on all collections.</div></div>
+    <div class="w-card"><div class="w-ico">&#127477;&#127472;</div><div class="w-title">Pakistan Nationwide</div><div class="w-text">Delivery to all major cities &#8212; Karachi, Lahore, Islamabad, Peshawar &amp; everywhere in between.</div></div>
+    <div class="w-card"><div class="w-ico">&#128640;</div><div class="w-title">24hr Dispatch</div><div class="w-text">Orders confirmed before noon dispatched same day. Fastest turnaround in the business.</div></div>
+    <div class="w-card"><div class="w-ico">&#128241;</div><div class="w-title">WhatsApp Support</div><div class="w-text">Instant response for quotes, samples &amp; updates. Always available on WhatsApp.</div></div>
+  </div>
+</section>
+
+<!-- BULK ORDER -->
+<section class="sec bulk" id="bulk">
+  <div class="bulk-grid">
+    <div>
+      <div class="sec-ey"><div class="sec-ey-line"></div><span class="sec-ey-label">How to Order</span></div>
+      <h2>Simple Process,<br>Best Wholesale Prices</h2>
+      <p class="sec-sub" style="margin-top:.5rem;">Minimum 100 packets per order. Each design priced individually. Pakistan delivery only. WhatsApp us for your custom quote.</p>
+      <div class="bulk-steps">
+        <div class="bs"><div class="bs-line"><div class="bs-num">1</div><div class="bs-connector"></div></div><div class="bs-content"><div class="bs-title">Browse &amp; Select Designs</div><div class="bs-text">View our collections here or on our Instagram. Pick designs and colour variants you need.</div></div></div>
+        <div class="bs"><div class="bs-line"><div class="bs-num">2</div><div class="bs-connector"></div></div><div class="bs-content"><div class="bs-title">WhatsApp for Pricing</div><div class="bs-text">Every design has a different price. Send us the design name &amp; quantity for your custom quote.</div></div></div>
+        <div class="bs"><div class="bs-line"><div class="bs-num">3</div><div class="bs-connector"></div></div><div class="bs-content"><div class="bs-title">Confirm 100+ Packets</div><div class="bs-text">We only process orders of 100 packets or more. This ensures you always get true wholesale rates.</div></div></div>
+        <div class="bs"><div class="bs-line"><div class="bs-num">4</div></div><div class="bs-content"><div class="bs-title">Pay &amp; Receive in 24hrs</div><div class="bs-text">Advance payment via EasyPaisa, JazzCash or bank transfer. Dispatched within 24 hours across Pakistan.</div></div></div>
+      </div>
+    </div>
+    <div class="form-card">
+      <div class="form-title">Request a Quote</div>
+      <div class="form-sub">Fill your details and we will respond within 2 hours on WhatsApp.</div>
+      <div class="form-moq-note"><div class="fmn-icon">&#9888;&#65039;</div><div class="fmn-text"><b>Important:</b> Minimum <b>100 packets</b> per order. Prices vary per design. <b>Pakistan delivery only.</b> &#127477;&#127472;</div></div>
+      <div class="fld-2">
+        <div class="fld"><label>Full Name</label><input type="text" placeholder="Your name"/></div>
+        <div class="fld"><label>WhatsApp Number</label><input type="tel" placeholder="+92 300 0000000"/></div>
+      </div>
+      <div class="fld-2">
+        <div class="fld"><label>City</label><input type="text" placeholder="Lahore, Karachi..."/></div>
+        <div class="fld"><label>Total Packets Needed</label><select><option>100 - 200 Packets</option><option>200 - 500 Packets</option><option>500 - 1000 Packets</option><option>1000+ Packets</option></select></div>
+      </div>
+      <div class="fld"><label>Collection / Design Type</label><select><option>Kach Glass Bangles</option><option>Silver Bangles</option><option>Bridal Fancy Set</option><option>Stone Work Bangles</option><option>Party Glam Set</option><option>Eid Special Set</option><option>Meena Work Bangles</option><option>Mixed Assorted Designs</option></select></div>
+      <div class="fld"><label>Special Requirements</label><textarea placeholder="Specific colours, sizes, packaging notes, delivery address..."></textarea></div>
+      <button class="form-submit" onclick="alert('Shukriya! Hum aapko WhatsApp par jald contact karenge.')">&#128230; Submit Order Request</button>
+      <div class="form-wa-alt">Ya seedha WhatsApp karein: <a href="https://wa.me/923000000000">+92 300 000 0000</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec testimonials">
+  <div style="text-align:center;">
+    <div class="sec-ey" style="justify-content:center;"><div class="sec-ey-line"></div><span class="sec-ey-label">Customer Reviews</span><div class="sec-ey-line"></div></div>
+    <h2>Trusted by Retailers Across Pakistan</h2>
+  </div>
+  <div class="test-grid">
+    <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-text">"AAA Bangles ka packaging bohat acha hai. Har set alag packet mein tha, display ke liye bilkul ready. Glass bangles ki colours bohat vibrant hain."</div><div class="t-author"><div class="t-av ta1">S</div><div><div class="t-name">Sana Accessories</div><div class="t-loc">&#128205; Lahore, Punjab</div><div class="t-verify">&#10004; Verified Bulk Buyer</div></div></div></div>
+    <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-text">"200 packets ka order diya, delivery 2 din mein aa gayi. Silver bangles ki quality outstanding thi. Customers ne bohat pasand kiya."</div><div class="t-author"><div class="t-av ta2">R</div><div><div class="t-name">Raheem Fashion Store</div><div class="t-loc">&#128205; Karachi, Sindh</div><div class="t-verify">&#10004; Verified Bulk Buyer</div></div></div></div>
+    <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-text">"Eid ke liye 500 packets ka order kiya. Har design ki alag price thi aur saari reasonable thi. Packaging premium thi. Highly recommended!"</div><div class="t-author"><div class="t-av ta3">F</div><div><div class="t-name">Fatima Boutique</div><div class="t-loc">&#128205; Islamabad, ICT</div><div class="t-verify">&#10004; Verified Bulk Buyer</div></div></div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-inner">
+    <div class="cta-ey"><div class="sec-ey-line"></div><span class="sec-ey-label">Get in Touch</span><div class="sec-ey-line"></div></div>
+    <h2 style="color:#fff;">Ready to Place Your<br>Bulk Order?</h2>
+    <p class="cta-desc">Contact us on WhatsApp for pricing, design catalogue &amp; bulk quotes. Follow on Instagram for latest designs &amp; colour variants.</p>
+    <div class="pk-note">&#127477;&#127472; <strong>Pakistan delivery only</strong> &nbsp;&#8212;&nbsp; Nationwide shipping to all cities &nbsp;&#8212;&nbsp; Min 100 packets</div>
+    <div class="cta-btns">
+      <a href="https://wa.me/923000000000" class="wa-big">&#128241; WhatsApp Us Now</a>
+      <a href="https://instagram.com/aaabangles" class="insta-big">&#128248; @AAA Bangles on Instagram</a>
+    </div>
+    <div class="contact-row">
+      <a href="https://wa.me/923000000000" class="cc"><span class="cc-icon">&#128222;</span>+92 300 000 0000</a>
+      <a href="mailto:aaabangles@gmail.com" class="cc"><span class="cc-icon">&#9993;&#65039;</span>aaabangles@gmail.com</a>
+      <span class="cc"><span class="cc-icon">&#128230;</span>Min. 100 Packets Per Order</span>
+      <span class="cc"><span class="cc-icon">&#127477;&#127472;</span>Pakistan Only</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <a href="#" class="logo"><div class="logo-ring">AAA</div><div class="logo-name">AAA <em>Bangles</em></div></a>
+      <p style="margin-top:.6rem;">Premium wholesale fancy bangles &#8212; glass bangles, silver bangles &amp; stone work sets. Each design in multi-colour variants with premium individual packaging.</p>
+      <div class="ft-pk-badge">&#127477;&#127472; Pakistan Wholesale Only &nbsp;|&nbsp; Min 100 Packets Per Order</div>
+      <div class="ft-socials">
+        <a href="https://instagram.com/aaabangles" class="fsoc">&#128248;</a>
+        <a href="https://wa.me/923000000000" class="fsoc">&#128241;</a>
+        <a href="https://facebook.com/aaabangles" class="fsoc">&#128216;</a>
+      </div>
+    </div>
+    <div class="ft-col"><h5>Collections</h5><ul><li><a href="#">Kach Glass Bangles</a></li><li><a href="#">Silver Bangles</a></li><li><a href="#">Bridal Fancy Sets</a></li><li><a href="#">Stone Work Bangles</a></li><li><a href="#">Party Wear</a></li><li><a href="#">Eid Special</a></li></ul></div>
+    <div class="ft-col"><h5>Information</h5><ul><li><a href="#bulk">How to Order</a></li><li><a href="#packing">Packaging Info</a></li><li><a href="#">Order Policy (100 Packets Min)</a></li><li><a href="#">Delivery Information</a></li><li><a href="#">Payment Methods</a></li></ul></div>
+    <div class="ft-col"><h5>Contact</h5><ul><li><a href="https://wa.me/923000000000">WhatsApp Orders</a></li><li><a href="https://instagram.com/aaabangles">Instagram</a></li><li><a href="mailto:aaabangles@gmail.com">Email Us</a></li><li><a href="#">Pakistan Nationwide Delivery</a></li></ul></div>
+  </div>
+  <div class="ft-bottom">
+    <div class="ft-copy">&#169; 2025 <span>AAA Bangles</span>. All Rights Reserved. &#127477;&#127472; Pakistan Wholesale Only.</div>
+    <div class="ft-copy">Min Order: <span>100 Packets</span> &nbsp;|&nbsp; Instagram: <span>@AAA Bangles</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
